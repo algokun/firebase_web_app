@@ -10,6 +10,13 @@ A simple photo blog app built with Firebase
 The best way to get started is by going through firebase official docs.
 https://firebase.google.com/docs
 
+### Libs and Tools
+ <a href = "https://jquery.org/"> BootStrap </a>
+ <a href = "https://getbootstrap.com/"> JQuery </a>
+ <a href = "https://nodejs.org/en/"> Node JS </a>
+ <a href = "https://fontawesome.com/start"> Font Awesome </a>
+ <a href = "https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"> Live Server for VS Code </a>
+ 
 ### Social
 
 Check out my social links..
