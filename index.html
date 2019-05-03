@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- bootstrap cdn links -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="main_box">
+        <div class ="signup_page" id="item1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5" id="signup_left">
+                            Blog
+                    </div>
+                    <div class="col-lg-7" id = "main_right">
+                            <div id="main_right">
+                                <div class="input-container">
+                                    <i class="fa fa-envelope icon"></i>
+                                    <input class="input-field" type="email" placeholder="Email" id="signup_email">
+                                </div>
+                                <div class="input-container">
+                                    <i class="fa fa-key icon"></i>
+                                    <input class="input-field" type="password" placeholder="Choose Password" id="signup_pass1">
+                                </div>
+                                <div class="input-container">
+                                    <i class="fa fa-key icon"></i>
+                                    <input class="input-field" type="password" placeholder="Confirm Password" id="signup_pass2">
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <button class="button2" id="signup_login">Login</button>
+                                    <div class="ml-5"></div>
+                                    <button class="button1" id="signup_signup">Signup</button>      
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class = "signup_profile" id="item2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7" id="profile_left">
+                        <h3 class="mt-3">Update Your Profile</h3>
+                        <hr>
+                        <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" type="text" placeholder="Name" id="name">
+                        </div>
+                        <div class="input-container">
+                                <i class="fa fa-phone icon"></i>
+                                <input class="input-field" type="tel" placeholder="Phone Number" id="phone">
+                        </div>
+                        <button class="button2" id="okay_btn">Okay</button>
+                    </div>
+                    <div class="col-lg-5" id="profile_right">
+                        
+                        <img src="https://www.autourdelacom.fr/wp-content/uploads/2018/03/default-user-image.png" id="avatar">
+                        <div class="upload-btn-wrapper">
+                                <button class="btn" id="choose">Choose File</button>
+                                <input type="file" name="myfile" accept="image/*" onchange="readURL(this)"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "login_page" id="item3">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5" id="signup_left">
+                                    Blog
+                            </div>
+                            <div class="col-lg-7" id = "main_right">
+                                    <div id="main_right">
+                                        <div class="input-container">
+                                            <i class="fa fa-envelope icon"></i>
+                                            <input class="input-field" type="text" placeholder="Email" id="login_email">
+                                        </div>
+                                        <div class="input-container">
+                                            <i class="fa fa-key icon"></i>
+                                            <input class="input-field" type="password" placeholder="Password" id="login_pass">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-link forgot" data-toggle="modal" data-target="#exampleModal">Forgot Password?</button>
+                                    <div class="row">
+                                            <button class="button2" id="login_login">Login</button>
+                                            <div class="ml-5"></div>
+                                            <button class="button1" id="login_signup">Signup</button>      
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+  
+    <!-- Modal -->
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase Scripts -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

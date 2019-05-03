@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Qwigley');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html{
+    height: 100%;
+
+    background: linear-gradient(to top,#039077 , #18D1A5);
+    background-attachment: fixed !important;
+}
+body{
+    margin: 0;
+    width: 100%;
+}
+
+.main_box {
+    width: 75vw;
+    height: 75vh;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#item1{
+    width: 75vw;
+    height: 75vh;
+    position: absolute;
+}
+
+#item2{
+    width: 75vw;
+    height: 75vh;
+    position: relative;
+    left: 75vw;
+    transition: all .75s ease-in-out;
+}
+
+#item3{
+    width: 75vw;
+    height: 75vh;
+    position: relative;
+    transform: translate(0,0);
+    transition: all .75s linear;
+}
+
+#signup_left{
+    height: 75vh;
+    background-color: #36D0AC;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken ;
+    font-family: 'Qwigley', cursive;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+    color: #ffffff;
+    text-shadow: 2px 1px 3px #000;
+}
+
+#main_right{
+    font-family: 'Raleway', sans-serif;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFF
+}
+
+.button1{
+    padding: 10px;
+    width: 15vw;
+    border: 3px solid #36D0AC;
+    border-radius: 7px;
+    background: #36D0AC;
+    color: #ffffff;
+    outline: none;
+}
+
+.button2{
+    padding: 10px;
+    width: 10vw;
+    border: 3px solid #36D0AC;
+    border-radius: 7px;
+    background:  #FFF;
+    color: #36D0AC;
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    width: 30vw;
+    margin-bottom: 25px;
+  }
+  
+  .icon {
+    padding: 20px;
+    background: #36D0AC;
+    color: white;
+    text-align: center;
+    border-radius: 7px 0px 0px 7px;
+    font-size: 1.2em;
+  }
+  
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 3px solid #36D0AC;
+    border-radius: 0px 7px 7px 0px;
+  }
+
+  .forgot{
+    padding: 10px;
+    width: 15vw;
+    color: #36D0AC;
+    position: relative;
+    left: 140px;
+}
+
+.forgot:hover{
+    text-decoration: none;
+}
+
+.button1:hover{
+    color: #36D0AC;
+    background: #ffffff;
+}
+.button2:hover{
+    color: #ffffff;
+    background: #36D0AC;
+}
+
+.input-field:focus{
+  border-color: #039077;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+
+#profile_left{
+    height: 75vh;
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    color: #039077
+}
+#profile_right{
+    height: 75vh;
+    background: #36D0AC;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+hr { 
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border: 1.5px solid #039077;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    border: 2px solid white;
+    color: #039077;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  
+  #avatar{
+    background-size: contain;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+  }

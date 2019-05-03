@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home - Blog</title>
+    
+    <!-- Bootstap cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+  <!-- Appbar Goes here -->
+
+  <div class="appbar">    
+        <div class="appbar_item_logo" >Blog</div>
+            
+        <div class="appbar_item search_out">
+                <div class="search_div">
+                    <i class="fa fa-search icon_search"></i>
+                    <input type="text" placeholder="Search" class="search">
+                </div>
+        </div>
+
+        <div class="appbar_item add_post_out">
+                <button class="add_post" data-toggle="modal" data-target="#exampleModal">Add Post</button>
+        </div>
+
+        <div class="dropdown">
+                <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="appbar_item userpic_out">
+                        <div class="user_pic_holder">
+                            <img src="https://vignette.wikia.nocookie.net/ironman/images/9/9f/Iron_Man_Armor_Model_47.jpg/" class="user_pic" id="user_profile">
+                        </div>
+                    </div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" id="drop_down_btn">Logout</a>
+                </div>
+        </div>
+
+        <div class="appbar_item username">
+            <h4 id="username_display"></h4>
+        </div>
+  </div>
+
+  <div class="main_page">
+    <div class="container">
+      <div class="row" id="main_list">
+        <!-- Posts Goes Here -->
+      </div>
+    </div>
+  </div>
+      
+  <!-- BootStrap Modal for adding post -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Post</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="image_add">
+                <center><img src="http://calgarypma.ca/wp-content/uploads/2018/01/default-thumbnail.jpg" alt="..." class="img img-thumbnail" id="desc_img"></center>
+            </div>
+            <!-- <div class="upload-btn-wrapper">
+                    <center><button class="choose_btn" id="choose">Choose Image To Upload</button></center>
+                    <input type="file" name="myfile" accept="image/*" onchange="readURL(this)"/>
+            </div> -->
+            <label class="fileContainer mt-3">
+                Choose Image To Upload
+                <input type="file" name="myfile" accept="image/*" onchange="readURL(this)" id="uploadFile"/>
+            </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Your Thoughts Here"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn add_post" id="save">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Firebase CDN Links -->
+
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+  <script src="./blog_posts.js"></script>
+  
+</body>
+</html>

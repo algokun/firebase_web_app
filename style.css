@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Qwigley');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e8e8;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden; 
+}
+
+.appbar{
+    width: 100vw;
+    height: 15vh;
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.appbar_item_logo {
+    font-family: 'Qwigley', cursive;
+    font-size: 3.5em;
+    color: #36D0AC;
+    text-shadow: 1px .5px .4px #000;
+    margin-left: 10%;
+}
+
+.appbar_item{
+    justify-content: center;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.user_pic_holder{
+    width: 55px;
+    height: 55px;
+    border: 2px solid #36D0AC;
+    background-color: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center
+}
+
+.user_pic{
+    max-width: 100%;
+}
+
+.search{
+    outline: none;
+    border: 0;
+    margin-left: 10px;
+}
+
+.search_div{
+    border: 2px solid #e9e8e8;
+    padding: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.icon_search{
+    margin-left: 10px;
+    color: #e9e8e8
+}
+
+.add_post{
+    background: #36D0AC;
+    outline: none;
+    border: 2px solid #36D0AC;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search_out{
+    margin-left: 25%
+}
+
+.add_post_out{
+    margin-left: 10%
+}
+
+.userpic_out{
+    margin-left: 5%;
+}
+
+  .img{
+      width: 40%;
+      overflow: hidden;
+  }
+
+  .fileContainer {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+.image_container_card{
+    height: 300px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card-img-top{
+    height: max-content;
+    width: max-content;
+}
+.main_page{
+    margin: 30px;
+}
+
+#main_card{
+    margin: 20px;
+}
+
+.username{
+    margin-top: 15px;
+    opacity: .7;
+}
+
+.card{
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown button{
+    background: none;
+    border: none;
+    outline: none;
+}
