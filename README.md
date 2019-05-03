@@ -16,7 +16,6 @@ The best way to get started is by going through firebase official <a href = "htt
     <li><a href = "https://nodejs.org/en/"> Node JS </a></li>
     <li><a href = "https://fontawesome.com/start"> Font Awesome </a></li>
     <li><a href = "https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"> Live Server for VS Code </a></li>
-    <li><a href = "https://jquery.org/"> BootStrap </a></li>
 </ol>
  
 ### Social
