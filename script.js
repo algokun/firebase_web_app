@@ -48,8 +48,8 @@ signup_signup_btn.addEventListener(
         else if(pass1 != pass2){
             window.alert("Passwords not matched");
         }
-        else if(pass1.length < 8){
-            window.alert("Password length should be 8 characters minimum");
+        else if(pass1.length < 10){
+            window.alert("Password length should be 10 characters minimum");
         }
         else{
             firebaseSignup(email , pass1);
