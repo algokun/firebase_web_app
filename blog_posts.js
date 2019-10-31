@@ -130,7 +130,7 @@ function getUserProfilePic(){
 setTimeout(function(){
     getUserProfilePic();
     getPosts();
-  }, 1000)
+  }, 500)
 
 const main_list = document.querySelector("#main_list");
 
